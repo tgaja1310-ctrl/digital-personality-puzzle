@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/digital-personality-puzzle/static/css/main.60f62f10.css",
+    "main.js": "/digital-personality-puzzle/static/js/main.c1a93cd5.js",
+    "index.html": "/digital-personality-puzzle/index.html",
+    "main.60f62f10.css.map": "/digital-personality-puzzle/static/css/main.60f62f10.css.map",
+    "main.c1a93cd5.js.map": "/digital-personality-puzzle/static/js/main.c1a93cd5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60f62f10.css",
+    "static/js/main.c1a93cd5.js"
+  ]
+}
