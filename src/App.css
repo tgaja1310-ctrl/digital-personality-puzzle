@@ -1,38 +1,161 @@
-body {
+/* =========================
+   GLOBAL THEME VARIABLES
+========================= */
+:root {
+  --bg-main: #0f172a;        /* deep navy */
+  --bg-card: #111827;        /* dark slate */
+  --accent: #38bdf8;         /* calm sky blue */
+  --accent-soft: rgba(56, 189, 248, 0.15);
+  --text-main: #e5e7eb;      /* soft white */
+  --text-muted: #9ca3af;     /* muted gray */
+  --border-soft: rgba(255, 255, 255, 0.08);
+}
+
+/* =========================
+   BASE RESET
+========================= */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #1f1c2c, #928dab);
-  color: white;
+  padding: 0;
 }
 
-.container {
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* =========================
+   APP WRAPPER
+========================= */
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================
+   CONTAINER / CARD
+========================= */
+.container,
+.card,
+.app,
+.main-box {
+  background-color: var(--bg-card);
+  border-radius: 14px;
+  padding: 28px;
+  width: 90%;
+  max-width: 520px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--border-soft);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1 {
+  font-size: 1.9rem;
+  color: var(--accent);
+  margin-bottom: 12px;
   text-align: center;
-  padding: 40px;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.12);
-  padding: 25px;
-  margin: 20px auto;
-  max-width: 400px;
-  border-radius: 12px;
+h2 {
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 10px;
 }
 
+h3 {
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 6px;
+}
+
+/* =========================
+   TEXT
+========================= */
+p {
+  color: var(--text-muted);
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+/* =========================
+   OPTIONS / BUTTONS
+========================= */
 button {
   width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 8px;
-  background: #00d4ff;
-  font-size: 16px;
+  background: transparent;
+  color: var(--text-main);
+  border: 1px solid var(--border-soft);
+  padding: 12px 16px;
+  margin: 8px 0;
+  border-radius: 10px;
   cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
 }
 
 button:hover {
-  background: #00a3cc;
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
 }
 
+/* =========================
+   ACTIVE / SELECTED OPTION
+========================= */
+button.active,
+button.selected {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* =========================
+   RESULT BOX
+========================= */
 .result {
-  background: rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 10px;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid var(--accent-soft);
+  text-align: center;
+}
+
+/* =========================
+   FOOTER / SMALL TEXT
+========================= */
+small {
+  display: block;
+  margin-top: 18px;
+  color: var(--text-muted);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+  .container,
+  .card,
+  .app,
+  .main-box {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
 }
