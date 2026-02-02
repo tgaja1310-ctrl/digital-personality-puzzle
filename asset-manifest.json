@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/digital-personality-puzzle/static/css/main.a269b058.css",
-    "main.js": "/digital-personality-puzzle/static/js/main.c1a93cd5.js",
+    "main.js": "/digital-personality-puzzle/static/js/main.e7c06425.js",
     "index.html": "/digital-personality-puzzle/index.html",
     "main.a269b058.css.map": "/digital-personality-puzzle/static/css/main.a269b058.css.map",
-    "main.c1a93cd5.js.map": "/digital-personality-puzzle/static/js/main.c1a93cd5.js.map"
+    "main.e7c06425.js.map": "/digital-personality-puzzle/static/js/main.e7c06425.js.map"
   },
   "entrypoints": [
     "static/css/main.a269b058.css",
-    "static/js/main.c1a93cd5.js"
+    "static/js/main.e7c06425.js"
   ]
 }
