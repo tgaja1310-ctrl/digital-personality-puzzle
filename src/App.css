@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00d4ff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00a3cc;
+}
+
+.result {
+  background: rgba(0, 0, 0, 0.4);
+}
